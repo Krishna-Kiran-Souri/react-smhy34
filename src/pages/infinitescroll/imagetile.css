@@ -1,0 +1,23 @@
+.grid-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.grid-list::-webkit-scrollbar {
+  display: none;
+  overflow-y: auto;
+}
+.masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  width: auto;
+}
+.masonry-grid_column {
+  padding-left: 15px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.masonry-grid_column > div {
+  margin: 15px auto;
+}
